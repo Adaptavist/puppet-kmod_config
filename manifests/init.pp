@@ -7,9 +7,9 @@ class kmod_config (
     ) {
 
     #all config can be set at either global or host level, therefore check to see if the hosts hash exists
-    if ($host != undef) {
+    if ($::host != undef) {
         #if so validate the hash
-        validate_hash($host)
+        validate_hash($::host)
 
         #if a host level "merge_config" flag has been set use it, otherwise use the global flag
         $real_merge_config = $host['kmod_config::merge_config']? {
