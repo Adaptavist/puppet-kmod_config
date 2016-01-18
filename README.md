@@ -1,4 +1,5 @@
 # kmod_config Module
+[![Build Status](https://travis-ci.org/Adaptavist/puppet-kmod_config.svg?branch=master)](https://travis-ci.org/Adaptavist/puppet-kmod_config)
 
 ## Overview
 
