@@ -1,5 +1,5 @@
 name 'adaptavist/kmod_config'
-version '0.1.5'
+version '0.1.6'
 source 'https://github.com/Adaptavist/puppet-kmod_config.git'
 author 'mhope'
 summary 'kmod_config Module' 
