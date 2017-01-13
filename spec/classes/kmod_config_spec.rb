@@ -4,6 +4,9 @@ describe 'kmod_config', :type => 'class' do
 
 
   context "Should blacklist the rpcsec_gss_krb5 module" do
+    let(:facts) {{
+      :augeasversion => '0.11.0'
+    }}
 
     let(:params) {
       { :blacklist    =>
@@ -21,6 +24,10 @@ describe 'kmod_config', :type => 'class' do
   end
 
   context "Should load the rpcsec_gss_krb5 module" do
+    let(:facts) {{
+      :augeasversion => '0.11.0',
+      :osfamily => 'RedHat'
+    }}
 
     let(:params) {
       { :load    =>
@@ -38,6 +45,9 @@ describe 'kmod_config', :type => 'class' do
   end
 
   context "Should alias the rpcsec_gss_krb5 module to alias_mod" do
+    let(:facts) {{
+      :augeasversion => '0.11.0'
+    }}
 
     let(:params) {
       { :mod_alias    =>
@@ -58,6 +68,9 @@ describe 'kmod_config', :type => 'class' do
   end
 
   context "Should install the rpcsec_gss_krb5 module" do
+    let(:facts) {{
+      :augeasversion => '0.11.0'
+    }}
 
     let(:params) {
       { :install    =>
