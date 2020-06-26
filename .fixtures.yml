@@ -4,5 +4,7 @@ fixtures:
       repo: "https://github.com/Adaptavist/puppet-stdlib"
     kmod:
       repo: "https://github.com/Adaptavist/puppet-kmod"
+    augeas_core:
+        repo: "https://github.com/Adaptavist/puppetlabs-augeas_core"
   symlinks:
     'kmod_config': "#{source_dir}"

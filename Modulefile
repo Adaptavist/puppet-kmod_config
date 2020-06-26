@@ -1,5 +1,5 @@
 name 'adaptavist/kmod_config'
-version '1.0.0'
+version '1.0.1'
 source 'https://github.com/Adaptavist/puppet-kmod_config.git'
 author 'mhope'
 summary 'kmod_config Module' 
@@ -9,3 +9,4 @@ project_page 'https://github.com/Adaptavist/puppet-kmod_config'
 
 ## Add dependencies, if any:
 dependency 'camptocamp/kmod'
+dependency 'puppetlabs/augeas_core ', '>= 1.0.5'
